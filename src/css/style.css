@@ -245,7 +245,7 @@ body {
 }
 
 /*****************
-*   appointment
+*   APPOINTMENT
 ******************/
 
 .appointment {
@@ -305,4 +305,107 @@ body {
     padding: 15px 40px;
     text-transform: uppercase;
     border: none;
+}
+
+/*************
+*   GALLERY
+**************/
+
+.gallery {
+    background-color: var(--color-primary-light);
+    padding: 100px 0;
+}
+
+.gallery h2 {
+    color: var(--color-secundary);
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.gallery img {
+    display: block;
+    margin: 0 auto;
+}
+
+.gallery .images {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 900px;
+    height: 100vh;
+    margin: 50px auto 0;
+}
+
+.gallery .images div {
+    border: 10px solid var(--color-primary);
+    width: 33%;
+    margin: 5px;
+}
+
+.gallery .images img {
+    width: 100%;
+}
+
+/**************
+*   LOCATION
+***************/
+
+.location {
+    background: var(--color-primary) url(../img/bg-location.jpg) no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.location .head {
+    display: flex;
+    justify-content: space-between;
+    background-color: #191919;
+    padding: 40px;
+}
+
+.location .head .information {
+    display: flex;
+    align-items: center;
+}
+
+.location .head .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+}
+
+.location .head h3 {
+    color: #C0C0C0;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.location .head span {
+    color: #fff;
+    font-size: 13px;
+}
+
+.location .map iframe {
+    width: 100%;
+}
+
+/************
+*   FOOTER
+*************/
+
+footer {
+    background-color: #191919;
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    padding: 30px;
 }
