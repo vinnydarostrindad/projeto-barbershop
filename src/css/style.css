@@ -1,0 +1,308 @@
+:root {
+    --color-primary: #917758;
+    --color-secundary: #3c2915;
+    --color-primary-light: #f5eee6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins, sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/**********
+*   HOME
+***********/
+
+.home {
+    background: var(--color-primary-light) url(../img/bg-home.jpg) no-repeat fixed;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+    padding: 30px 0 0;
+}
+
+.home .header {
+    height: 21%;
+}
+
+.home .header .nav {
+    display: flex;
+    justify-content: center;
+}
+
+.home .header .nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.home .header .nav ul li {
+    width: 150px;
+    text-align: center;
+}
+
+.home .header .nav ul li a {
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.home .header .nav ul li a:hover {
+    color: var(--color-primary);
+    border-bottom: 1px solid var(--color-primary);
+} 
+
+.home .header .nav ul img {
+    display: block;
+    margin: 0 auto;
+}
+
+.home .banner-container {
+    position: relative;
+    height: 71%;
+}
+
+.home .banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 760px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.home .banner span:first-child {
+    color: var(--color-primary);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.home .banner h1 {
+    font-size: 120px;
+}
+
+.home .banner img {
+    display: block;
+    margin: 20px auto 0;
+}
+
+/***********
+*   ABOUT
+************/
+
+.about {
+    background-color: var(--color-primary);
+}
+
+.about .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .timing {
+    position: relative;
+    top: -50px;
+    background: rgba(0, 0, 0, 0.8) url(../img/brush-big.jpg) no-repeat;
+    background-size: cover;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+}
+
+.about .timing span {
+    display: block;
+    color: #fff;
+}
+
+.about .timing .overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+}
+
+.about .timing .overlay img:first-of-type {
+    width: 50px;
+}
+.about .timing .overlay h2 {
+    color: var(--color-primary);
+    font-size: 30px;
+    width: fit-content;
+    margin: 0 auto 30px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--color-primary);
+}
+
+.about .timing .overlay h3 {
+    color:rgb(128, 128, 128);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.about .timing .overlay .schedules {
+    margin: 10px 0;
+}
+
+.about .timing .overlay .schedules::after {
+    content: "•";
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.about .timing .overlay .schedules:last-of-type::after {
+    content: "|";
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.about .history {
+    color: #fff;
+    width: 62%;
+    margin-top: 100px; 
+}
+
+.about .history h2 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.about .history h2::after {
+    content: "";
+    display: block;
+    background-color: rgba(255, 255, 255, 0.178);
+    width: 100px;
+    height: 3px;
+    margin: 20px 0;
+}
+
+.about .history .text {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.about .history .text p {
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+/**************
+*   SERVICES
+***************/
+
+.services {
+    background-color: var(--color-primary-light);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.services h2 {
+    color: var(--color-secundary);
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.services .services-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.services .services-content .box {
+    border: 3px solid var(--color-primary);
+    margin: 30px;
+    padding: 50px 40px;
+}
+
+.services .services-content .box h3 {
+    color: var(--color-secundary);
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.services .services-content .box p {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+/*****************
+*   appointment
+******************/
+
+.appointment {
+    background: var(--color-primary) url(../img/chair-ic.png) no-repeat bottom right;
+    background-size: 300px;
+    color: var(--color-primary-light);
+    padding: 100px 0;
+}
+
+.appointment h2 {
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+.appointment img {
+    display: block;
+    margin: 0 auto;
+}
+
+.appointment form {
+    margin-top: 80px;
+}
+
+.appointment form label {
+    display: block;
+}
+
+.appointment .personal-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.appointment .personal-data div {
+    width: 22%;
+    margin-bottom: 20px;
+}
+
+.appointment textarea {
+    height: 100px;
+}
+
+.appointment .personal-data input, .appointment .personal-data select, .appointment textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+}
+
+.appointment button {
+    background-color: var(--color-secundary);
+    color: #fff;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    border: none;
+}
